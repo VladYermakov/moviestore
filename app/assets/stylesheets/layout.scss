@@ -9,38 +9,52 @@ body {
   background: url(body_bg.png) center;
   color: #fff;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
 // Logo
 .title-area{
-  a { padding:0 !important }
+  a {
+    padding:0 !important;
+    font-size: 28px;
+  }
   i {
     font-size: 30px;
     position: relative;
     top: 2px;
   }
 }
+
+.top-bar {
+  background-color: transparent;
+  //margin-bottom: 25px;
+  border-bottom: 1px solid white;
+}
 // Topbar items
-.top-bar-section ul li { background: transparent }
+.top-bar-section ul li {
+  background: transparent;
+  a {
+    background-color: transparent !important;
+    &:hover {
+      background-color: #333333 !important;
+    }
+  }
+}
 // Forms
 .form-container {
-  padding: 3% 3%;
+  padding: 0;
   .switch > div {
     position: relative;
     top: -5px;
   }
 }
 
-.movies-grid {
-  .movie-card {
-    width:220px;
-    margin:auto;
-    .poster img {
-      height: 325px;
-      width:100%;
-    }
-    .movie-info {
-      .title {
-        height: 4em;
-      }
-    }
-  }
+.p15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#main-content {
+  margin-top: 15px;
 }

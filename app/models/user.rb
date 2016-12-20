@@ -4,7 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_many :carts
+  has_many :movies, through: :carts
+
   def cart_count
-    $redis.scard "cart#{id}"
+    movies.count
   end
 end

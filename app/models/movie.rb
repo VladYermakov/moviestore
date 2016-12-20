@@ -1,6 +1,9 @@
 class Movie < ApplicationRecord
+  has_many :carts
+  has_many :users, through: :carts
+
   def poster
-    "http://ia.media-imdb.com/images/M/#{poster_url}"
+    poster_url
   end
 
   def imdb
@@ -8,10 +11,11 @@ class Movie < ApplicationRecord
   end
 
   def cart_action(current_user_id)
-    if $redis.sismember "cart#{current_user_id}", id
-      "Remove from"
+    user = users.find_by id: current_user_id
+    if user
+      'Remove from'
     else
-      "Add to"
+      'Add to'
     end
   end
 end

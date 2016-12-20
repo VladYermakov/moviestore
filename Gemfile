@@ -5,7 +5,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 5.5.3.2'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -16,8 +16,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
-gem 'redis', '~> 3.0.1'
-gem 'hiredis', '~> 0.6.1'
+gem 'redis-rails'
+gem 'hiredis'
 
 # gem 'bcrypt', '~> 3.1.7'
 
