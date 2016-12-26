@@ -1,0 +1,9 @@
+<li class="comment">
+  <span class="author"><%= comment.user.email %></span>
+  <span class="timestamp"><%= comment.created_at.to_formatted_s :short %></span>
+  <br>
+  <span class="content"><%= comment.content %></span>
+  <!--span class="timestamp">
+    Posted <%#= time_ago_in_words(comment.created_at) %> ago.
+  </span-->
+</li>

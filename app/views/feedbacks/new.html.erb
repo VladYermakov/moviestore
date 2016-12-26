@@ -1,0 +1,6 @@
+<%= form_for @feedback, class: 'form-container' do |f| %>
+  <%= email_field_tag :email %>
+  <%= f.text_area :content %>
+
+  <%= f.submit %>
+<% end %>

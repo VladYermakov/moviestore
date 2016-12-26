@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'csv'
 CSV.foreach(Rails.root.join('db/seeds_data/movies.csv'), headers: true) do |row|
-  Movie.find_or_create_by(title: row[0], release_year: row[1], price: row[2],
-                          description: row[3], imdb_id: row[4], poster_url: row[5])
+  Movie.find_or_create_by(title: row[1], release_year: row[2], price: row[3],
+                          description: row[4], imdb_id: row[5], poster_url: row[6])
 end

@@ -1,0 +1,6 @@
+<%= form_for @comment, class: 'form-container' do |f| %>
+  <div class="input-form-border"><%= f.text_area :content %></div>
+  <%= f.hidden_field :movie_id, value: @movie.id %>
+  <%= f.hidden_field :user_id, value: @current_user.id %>
+  <%= f.submit class: 'btn-sm' %>
+<% end %>

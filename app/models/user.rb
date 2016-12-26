@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :carts
   has_many :movies, through: :carts
+  has_many :comments
 
   def cart_count
     movies.count
