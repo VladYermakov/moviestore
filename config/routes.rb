@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   root 'movies#index'
 
-  resources :movies
+  resources :movies do
+    collection do
+      get 'rest'
+      post 'change_count'
+    end
+  end
 
   resource :cart, only: [:show] do
     put 'add/:movie_id', to: 'carts#add', as: :add_to

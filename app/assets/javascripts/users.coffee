@@ -1,7 +1,7 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-toggle_admin = (tag) ->
+toggle_role = (tag) ->
   id = $(tag).attr('id')[5..-1]
   val = $(tag).val()
   console.log id, val
@@ -12,4 +12,4 @@ toggle_admin = (tag) ->
 
 $(document).ready ->
   $('.role-select').on 'change', (event) ->
-    toggle_admin(event.target)
+    toggle_role(event.target)

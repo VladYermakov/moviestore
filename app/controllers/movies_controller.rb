@@ -43,6 +43,16 @@ class MoviesController < ApplicationController
     redirect_to root_path
   end
 
+  def rest
+    @movies = Movie.all
+  end
+
+  def change_count
+    @movie = Movie.find params[:id]
+    @movie.update_attributes count_of_copies: params[:count]
+    render json: { status: true, id: @movie.id, count: @movie.count_of_copies }
+  end
+
   private
   def should_be_seller
     if !current_user

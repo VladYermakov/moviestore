@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-input, textarea, select, .uneditable-input {
+/*input, textarea, select, .uneditable-input {
   border: none;
   width: 100%;
   background: transparent;
@@ -69,7 +69,7 @@ input, textarea, select, .uneditable-input {
   color: #333;
   @include box_sizing;
   outline: none;
-}
+}*/
 
 .input-form-border {
   padding: 12px 10px;

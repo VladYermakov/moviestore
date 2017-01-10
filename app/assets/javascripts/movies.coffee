@@ -19,3 +19,17 @@ $(window).load ->
   $('#preview').on 'click', ->
     link = $('#movie_poster_url').val()
     $('#poster-preview').attr('src', link)
+
+
+change_count = (tag) ->
+  id = $(tag).attr('id')[22..-1]
+  val = $(tag).val()
+  console.log id, val
+  $.post '/movies/change_count',
+    id: id
+    count: val
+
+
+$(document).ready ->
+  $('.movie-field').on 'change', (event) ->
+    change_count(event.target)
