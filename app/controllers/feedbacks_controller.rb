@@ -1,4 +1,5 @@
 class FeedbacksController < ApplicationController
+
   def create
     @email = params[:email]
     @content = params[:content]

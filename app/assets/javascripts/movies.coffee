@@ -15,6 +15,7 @@ $(window).load ->
       $('.cart-count').html(data)
       $this.find('span').html(new_target)
       $this.data('target', new_target)
+      
   $('#preview').on 'click', ->
     link = $('#movie_poster_url').val()
     $('#poster-preview').attr('src', link)

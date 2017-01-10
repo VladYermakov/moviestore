@@ -1,6 +1,7 @@
 class Movie < ApplicationRecord
   has_many :carts, inverse_of: :movie
   has_many :users, through: :carts
+  has_many :comments
 
   belongs_to :seller, class_name: 'User', inverse_of: :sold_movies
 

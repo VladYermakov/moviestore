@@ -55,6 +55,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea, select, .uneditable-input {
+  border: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  @include box_sizing;
+  outline: none;
+}
+
+.input-form-border {
+  padding: 12px 10px;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  textarea {
+    resize: none;
+    overflow: auto;
+  }
+}
+
+
 .p15 {
   margin-left: 15px;
   margin-right: 15px;
