@@ -2,7 +2,18 @@ class CartsController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @cart_movies = current_user.movies
+    @cart_movies = current_user.bought_movies
+    @count = @cart_movies.where('movies.count_of_copies > 0').count
+  end
+
+  def buy
+    @cart_movies = current_user.bought_movies.where('movies.count_of_copies > 0')
+    @cart_movies.each do |movie|
+      current_user.carts.find_by(movie_id: movie.id).update_attributes paid: true
+      movie.update_attributes count_of_copies: movie.count_of_copies - 1
+    end
+    flash[:notice] = 'Successfully Bought'
+    redirect_to cart_path
   end
 
   def add

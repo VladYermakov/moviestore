@@ -1,6 +1,10 @@
 class Movie < ApplicationRecord
-  has_many :carts
+  has_many :carts, inverse_of: :movie
   has_many :users, through: :carts
+
+  belongs_to :seller, class_name: 'User', inverse_of: :sold_movies
+
+  acts_as_commentable
 
   def poster
     poster_url

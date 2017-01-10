@@ -1,5 +1,5 @@
 <% provide :title, 'Login - MovieStore' %>
-<div class="form-container radius-box glassy-bg small-10 small-centered medium-8 large-6 columns">
+<div class="form-container radius-box small-10 small-centered medium-8 large-6 columns">
   <h2>Login</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -14,8 +14,8 @@
       </div>
     <% end -%>
 
-    <div class="clear"><%= f.submit "Let me in", class: "button" %></div>
+    <div class="clear"><%= f.submit 'Let me in', class: 'button radius' %></div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
+  <%= render 'devise/shared/links' %>
 </div>
