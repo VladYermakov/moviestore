@@ -4,7 +4,7 @@
 Rails.application.config.assets.version = '1.0'
 
 # Rails.application.config.assets.precompile += %w(  )
-Rails.application.config.assets.path << Rails.root.join('app', 'assets', 'fonts')
+# Rails.application.config.assets.path << Rails.root.join('app', 'assets', 'fonts')
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
