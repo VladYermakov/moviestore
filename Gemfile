@@ -6,7 +6,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 
-gem 'foundation-rails', '~> 5.5.3.2'
+gem 'foundation-rails', '~> 6.4.3.0'
 
 gem 'dotenv', group: :development
 
@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
-gem 'commontator', '~> 4.11.1'
+gem 'commontator', '~> 5.1.0'
 
 gem 'will_paginate', '~> 3.1.5'
 
