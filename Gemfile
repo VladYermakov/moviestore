@@ -6,7 +6,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 
-gem 'foundation-rails', '~> 5.5.3.2'
+gem 'foundation-rails', '~> 6.4.3.0'
 
 gem 'dotenv', group: :development
 
