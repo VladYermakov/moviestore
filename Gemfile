@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
-gem 'commontator', '~> 4.11.1'
+gem 'commontator', '~> 5.1.0'
 
 gem 'will_paginate', '~> 3.1.5'
 
