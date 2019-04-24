@@ -11,7 +11,7 @@ gem 'foundation-rails', '~> 6.4.3.0'
 gem 'dotenv', group: :development
 
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
