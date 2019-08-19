@@ -4,7 +4,7 @@ gem 'rails', '~> 5.2.0'
 gem 'pg', '~> 1.1'
 
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 
 gem 'foundation-rails', '~> 6.4.3.0'
 
